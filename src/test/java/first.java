@@ -11,8 +11,7 @@ public class first {
     String password = faker.internet().password();
     String nameF = faker.name().firstName();
     String nameL = faker.name().lastName();
-    String email = ""+(char)(65+Math.random()*20)+(char)(65+Math.random()*20)+(char)(65+Math.random()*20)+(char)(65+Math.random()*20)+"@gmail.com";
-
+    String email = faker.internet().emailAddress();
 @Test
     public void signUp() throws InterruptedException {
         WebDriver wb = new ChromeDriver();
